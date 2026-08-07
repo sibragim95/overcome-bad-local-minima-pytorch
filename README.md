@@ -22,10 +22,11 @@ While the [original repository](https://github.com/deeplearningmethods/overcome-
 ## 🛠️ Repository Structure
 
 ```text
-├── codes/
-│  ├── Clipping_SNN_all_biases_PyTorch.py     # Training only biases of shallow NN (SNN) with clipping activation
-│  ├── ReLU_SGD_DNN_4Layer_Xavier.py          # Training all parameters of deep ReLU NN with Xavier initialization
-│  └── ReLU_SNN_inner_bias.py                 # Training only inner biases of shallow ReLU NN
-├── .gitignore           # Python ignore rules
-├── LICENSE              # MIT License
-└── README.md            # Repository documentation
+├── Codes/
+│   ├── Clipping_SNN_all_biases_PyTorch.py           # Training all biases of a shallow NN with clipping activation
+│   ├── ReLU_Adam_DNN_4Layer_Xavier_PyTorch.py       # Training a deep 4-layer ReLU NN with Adam optimizer and Xavier init
+│   ├── ReLU_DNN_all_params_Random_Normal_PyTorch.py # Training all parameters of a deep ReLU NN with random normal init
+│   └── ReLU_SNN_inner_bias_PyTorch.py               # Training only inner biases of a shallow ReLU NN
+├── .gitignore                                       # Python ignore rules
+├── LICENSE                                          # MIT License
+└── README.md                                        # Repository documentation
