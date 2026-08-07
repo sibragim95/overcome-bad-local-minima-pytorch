@@ -13,7 +13,7 @@ This repository provides a **PyTorch** re-implementation of key numerical simula
 While the [original repository](https://github.com/deeplearningmethods/overcome-bad-local-minima) contains all numerical experiments implemented in **TensorFlow**, this repository refactors a selected subset of the **core simulations (Section 4)** into **PyTorch**. 
 
 ### Key Highlights:
-* **Strict Mathematical Fidelity:** Prioritized exact 1-to-1 mathematical translation over standard PyTorch object-oriented design. We utilized functional closures to perfectly mimic TensorFlow 1.x's static computational graphs, ensuring that untrainable parameters remain strictly frozen while target variables are updated.
+* **Strict Mathematical Fidelity:** Prioritized exact 1-to-1 mathematical translation over standard PyTorch object-oriented design: Utilized functional closures to perfectly mimic TensorFlow 1.x's static computational graphs, ensuring that untrainable parameters remain strictly frozen while target variables are updated.
 * **True Monte Carlo Dynamics:** Carefully restructured the training loops to evaluate fresh Monte Carlo batches dynamically at every single SGD step, guaranteeing true population risk minimization rather than static empirical risk minimization.
 * **High-Performance & Portable:** Engineered with device-agnostic execution for instant deployment. The code automatically leverages high-end hardware (e.g., NVIDIA GPUs) to reduce 10,000-step simulation times from hours down to minutes, while retaining graceful fallbacks for local CPU execution.
 
