@@ -29,4 +29,5 @@ While the [original repository](https://github.com/deeplearningmethods/overcome-
 │   └── ReLU_SNN_inner_bias_PyTorch.py               # Training only inner biases of a shallow ReLU NN
 ├── .gitignore                                       # Python ignore rules
 ├── LICENSE                                          # MIT License
-└── README.md                                        # Repository documentation
+├── README.md                                        # Repository documentation
+└── requirements.txt                                 # Required Python packages
